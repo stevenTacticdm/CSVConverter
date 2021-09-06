@@ -11,6 +11,7 @@ export const getNumOfGroups = async () => {
 
   return numOfGroups;
 };
+//asidfuhaisdhfa
 
 const getData = async () => {
   const response = await fetch(
