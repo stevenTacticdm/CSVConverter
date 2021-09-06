@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tactic's .csv converter</title>
+        <link href="./style.css" rel="stylesheet"/>
+        <script type="module" src="./printDataInWebpage.js"></script>
+        <script type="module" src="./convertCSVtoData.js"></script>
+    </head>
+    <body>
+        <h1 id="test">tactic's csv converter</h1>
+        <h2>This is where we convert excel sheets to Sales Navigator inputs</h2>
+        <form class="form" action="./upload" method="post" enctype="multipart/form-data" id="form">
+            <h6><strong>Please upload your .csv file with company names</strong> </h6>
+            <input type="file" name="inputFile" id="inputFile" accept=".csv"/>
+            <br/>
+            </br>   
+            <label for="locations">What location would you like to use?</label>
+        </br>   
+                <input list="locations" id="location" name="location">
+                     <datalist id="locations">
+                        <option value="Nederland"></option>
+                        <option value="Randstad"></option>
+                        <option value="Europa"></option>
+                    </datalist>
+            <br/>
+            <h6><strong>Job title (multiple answers possible)</strong> </h6>
+            <input type="textarea" name="InputJobTitle" id="InputJobTitle"/>
+            <br/>
+            <br/>
+            <button type="submit" id="submit">Submit</button>
+
+        </form>
+
+    </body>
+    <script>
+        
+
+        /*const getData = async () => {
+            const response = await fetch('Retail ijst Tactic - Brabant Limburg Gelderland.csv');
+            const data = await response.text();
+            let printableCompanyArray = [];
+            let count = 0;
+
+            const rows = data.split('\n').splice(1);
+            
+            let numOfGroups = Math.ceil(rows.length/20);
+            
+            
+            for (let i = 0; i < numOfGroups; i++){
+                printableCompanyArray[i] = [];
+                for (let j = 0; j < 20; j++){
+                    if (rows[count] === undefined){
+                        break;
+                    }
+                    printableCompanyArray[i][j] = await rows[count];
+                    //console.log(printableCompanyArray[i][j]);
+                    count+=1;
+                }
+            }
+            console.log(printableCompanyArray[0][5]);
+
+            //console.log(printableCompanyArray);
+            /*const cols = rows.forEach(elt => {
+                const row = elt.split(',');
+                
+            })
+            console.log(cols.length);*/
+
+
+    </script>
+
+
+</html>

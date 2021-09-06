@@ -1,0 +1,37 @@
+#inputFile {
+    border-radius: 5px;
+}
+
+h6, label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+#submit {
+    background-color: darkgrey;
+    color: white;
+    border-radius: 5px;
+}
+
+p {
+    background-color: #ebebeb;
+    font-size:15px;
+    margin-top: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+button {
+    background-color: #35d7a4;
+    border: hidden;
+    color: white;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+#InputJobTitle {
+    height: 75px;
+    width: 150px;
+}
